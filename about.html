@@ -1,333 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About David Mash - Mash Estate</title>
-<meta name="description" content="Real estate investing intelligence from an investor and property law background.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About - Mash Estate</title>
+<meta name="description" content="About Mash Estate: Real estate investing intelligence from an investor and property law background.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{  --bg:#f9fafb;--bg2:#f3f4f6;--sur:#e9eaec;
-  --pri:#1e3a6e;--pri2:#1e40af;
-  --txt:#111827;--mut:#6b7280;--brd:#d1d5db;
-  --fh:Georgia,serif;--fb:system-ui,sans-serif;--fm:monospace;}
-body{font-family:var(--fb);background:var(--bg);color:var(--txt);font-size:15px;line-height:1.75}
-a{color:var(--pri);text-decoration:none}a:hover{color:var(--pri2)}
-.gn{background:#fff;border-bottom:2px solid var(--pri);padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:62px;position:sticky;top:0;z-index:99;box-shadow:0 2px 12px rgba(0,0,0,.06)}
-.gn-logo{font-size:19px;font-weight:800;color:var(--pri);letter-spacing:-.5px;text-decoration:none}
-.gn-links{display:flex;gap:24px}.gn-links a{font-size:13px;color:var(--mut);font-weight:500;transition:color .2s}.gn-links a:hover{color:var(--pri)}
-/* hero */
-.gab-hero{background:var(--bg2);border-bottom:2px solid var(--pri);padding:48px 48px 40px}
-.gab-hero-top{display:flex;align-items:center;gap:28px;margin-bottom:28px}
-.gab-avi{width:80px;height:80px;border-radius:50%;background:var(--pri);display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 16px rgba(249,115,22,.3)}
-.gab-hero h1{font-size:clamp(22px,3vw,36px);font-weight:800;margin-bottom:4px;color:var(--txt)}
-.gab-hero-role{font-size:14px;color:var(--pri);font-weight:700}
-.gab-hero-cat{font-size:12px;color:var(--mut);margin-top:4px}
-.gab-stats{display:flex;gap:14px;flex-wrap:wrap}
-.gab-stat{background:#fff;border:1px solid var(--brd);border-radius:8px;padding:12px 18px;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-.gab-stat-num{font-size:22px;font-weight:800;color:var(--pri)}
-.gab-stat-lbl{font-size:10px;color:var(--mut);margin-top:2px;text-transform:uppercase;letter-spacing:1px}
-/* layout */
-.gab-layout{display:grid;grid-template-columns:1fr 300px;gap:48px;max-width:1160px;margin:0 auto;padding:52px 48px}
-.gab-sec{margin-bottom:44px}
-.gab-sec-hd{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--mut);border-bottom:1px solid var(--brd);padding-bottom:10px;margin-bottom:20px}
-.gab-p{color:var(--mut);line-height:1.9;margin-bottom:16px;font-size:15px}
-/* expertise */
-.gab-exp{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.gab-exp-card{border:1px solid var(--brd);border-radius:8px;padding:14px 16px;display:flex;gap:10px;align-items:flex-start;transition:border-color .2s,box-shadow .2s}.gab-exp-card:hover{border-color:var(--pri);box-shadow:0 3px 12px rgba(249,115,22,.08)}
-.gab-exp-icon{color:var(--pri);flex-shrink:0;margin-top:1px}
-.gab-exp-head{font-size:13px;font-weight:700;color:var(--txt);margin-bottom:3px}
-.gab-exp-body{font-size:11px;color:var(--mut);line-height:1.6}
-/* methodology */
-.gab-steps{display:flex;flex-direction:column;gap:14px}
-.gab-step{display:flex;gap:14px;align-items:flex-start}
-.gab-step-n{width:30px;height:30px;border-radius:50%;background:var(--pri);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.gab-step-head{font-size:14px;font-weight:700;color:var(--txt);margin-bottom:3px}
-.gab-step-body{font-size:12px;color:var(--mut);line-height:1.65}
-/* sidebar */
-.gab-side{}
-.gab-card{background:#fff;border:1px solid var(--brd);border-radius:10px;padding:22px;margin-bottom:18px;box-shadow:0 1px 6px rgba(0,0,0,.04)}
-.gab-card-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--pri);margin-bottom:12px}
-/* newsletter */
-.gab-nl{background:var(--pri);border-radius:10px;padding:24px;margin-bottom:18px;color:#fff}
-.gab-nl h3{font-size:16px;font-weight:800;margin-bottom:6px}
-.gab-nl p{font-size:12px;opacity:.88;margin-bottom:14px}
-.gab-nl-in{width:100%;border:none;border-radius:6px;padding:10px 12px;font-size:13px;margin-bottom:8px;outline:none}
-.gab-nl-btn{width:100%;background:#000;color:#fff;border:none;border-radius:6px;padding:10px;font-size:13px;font-weight:700;cursor:pointer;transition:opacity .2s}.gab-nl-btn:hover{opacity:.85}
-/* footer */
-.gft{background:var(--bg2);border-top:1px solid var(--brd);padding:28px 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.gft-copy{font-size:12px;color:var(--mut)}.gft-links{display:flex;gap:20px}.gft-links a{font-size:12px;color:var(--mut);transition:color .15s}.gft-links a:hover{color:var(--pri)}
-@media(max-width:1024px){.gab-layout{grid-template-columns:1fr}}
-@media(max-width:768px){.gn{padding:0 16px}.gn-links{display:none}.gab-hero{padding:32px 16px 28px}.gab-hero-top{flex-direction:column;gap:16px}.gab-layout{padding:32px 16px;gap:24px}.gab-exp{grid-template-columns:1fr}.gft{padding:20px 16px;flex-direction:column;text-align:center}}
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#ffffff;
+  --bg2:#f8f9fb;
+  --navy:#1b2a4a;
+  --navy2:#243560;
+  --blue:#2563eb;
+  --blue2:#1d4ed8;
+  --text:#111827;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --font:'Inter',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.6}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* NAV - clean professional */
+.site-nav{background:var(--bg);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.nav-in{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;height:68px;gap:48px}
+.nav-logo{font-size:20px;font-weight:700;color:var(--navy);letter-spacing:-.03em}
+.nav-logo span{color:var(--blue)}
+.nav-links{display:flex;gap:0;flex:1;flex-wrap:nowrap;overflow:hidden}
+.nav-links a{font-size:14px;font-weight:500;padding:0 18px;height:68px;display:flex;align-items:center;color:var(--muted);transition:color .15s}
+.nav-links a:hover{color:var(--navy)}
+.nav-btn{margin-left:auto;background:var(--navy);color:#fff;font-size:14px;font-weight:600;padding:10px 22px;border-radius:6px;transition:background .15s}
+.nav-btn:hover{background:var(--navy2)}
+
+/* HERO - clean, property professional */
+.hero{background:var(--navy);padding:80px 0}
+.hero-in{max-width:1200px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 440px;gap:80px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(37,99,235,.15);border:1px solid rgba(37,99,235,.3);padding:4px 12px;border-radius:100px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#93c5fd;margin-bottom:20px}
+.hero-h1{font-size:clamp(36px,4vw,56px);font-weight:700;letter-spacing:-.03em;line-height:1.1;color:#fff;margin-bottom:16px}
+.hero-h1 span{color:#60a5fa}
+.hero-desc{font-size:15px;color:rgba(255,255,255,.6);max-width:440px;margin-bottom:32px;line-height:1.8}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:32px;padding:24px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:8px}
+.hero-stat{}
+.hero-stat-num{font-size:28px;font-weight:700;color:#fff;letter-spacing:-.03em;display:block}
+.hero-stat-label{font-size:12px;color:rgba(255,255,255,.5);margin-top:2px}
+.hero-btns{display:flex;gap:12px}
+.btn-blue{background:var(--blue);color:#fff;font-size:14px;font-weight:600;padding:12px 24px;border-radius:6px;transition:background .15s}
+.btn-blue:hover{background:var(--blue2)}
+.btn-white{background:transparent;border:1.5px solid rgba(255,255,255,.2);color:rgba(255,255,255,.8);font-size:14px;font-weight:500;padding:11px 24px;border-radius:6px;transition:all .15s}
+.btn-white:hover{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.4)}
+.hero-card{background:var(--bg);border-radius:12px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.25)}
+.hero-card-img{aspect-ratio:16/9;background:var(--bg2);overflow:hidden}
+.hero-card-img img{width:100%;height:100%;object-fit:cover}
+.hero-card-body{padding:24px}
+.hero-card-label{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
+.hero-card-title{font-size:18px;font-weight:700;letter-spacing:-.02em;color:var(--text);line-height:1.3;margin-bottom:8px}
+.hero-card-meta{font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
+
+/* MARKET PULSE BAR */
+.market-bar{background:var(--bg2);border-bottom:1px solid var(--border);padding:12px 0}
+.market-in{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:32px;overflow-x:auto;scrollbar-width:none}
+.market-in::-webkit-scrollbar{display:none}
+.market-item{white-space:nowrap;display:flex;align-items:center;gap:8px}
+.market-label{font-size:12px;font-weight:600;color:var(--muted)}
+.market-val{font-size:13px;font-weight:700;color:var(--text)}
+.market-up{color:#16a34a;font-size:12px;font-weight:600}
+.market-down{color:#dc2626;font-size:12px;font-weight:600}
+.market-div{width:1px;height:20px;background:var(--border);flex-shrink:0}
+
+/* CONTENT SECTIONS */
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.section{padding:60px 0}
+.section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px}
+.section-title{font-size:22px;font-weight:700;letter-spacing:-.02em;color:var(--text)}
+.section-title span{color:var(--blue)}
+.section-link{font-size:13px;font-weight:600;color:var(--blue);transition:opacity .15s}
+.section-link:hover{opacity:.7}
+
+/* PROPERTY CARD GRID */
+.prop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.prop-card{border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:box-shadow .2s,transform .2s}
+.prop-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-2px)}
+.prop-card-img{aspect-ratio:16/9;background:var(--bg2);overflow:hidden}
+.prop-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.prop-card:hover .prop-card-img img{transform:scale(1.03)}
+.prop-card-body{padding:20px}
+.prop-label{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);background:rgba(37,99,235,.08);padding:3px 8px;border-radius:4px;margin-bottom:10px}
+.prop-title{font-size:17px;font-weight:700;letter-spacing:-.02em;color:var(--text);line-height:1.3;margin-bottom:8px;transition:color .15s}
+.prop-card:hover .prop-title{color:var(--blue)}
+.prop-excerpt{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:12px}
+.prop-meta{font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
+
+/* GUIDE LIST - horizontal */
+.guide-list{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.guide-item{background:var(--bg);display:grid;grid-template-columns:80px 1fr;gap:20px;padding:24px;align-items:start;transition:background .15s}
+.guide-item:hover{background:var(--bg2)}
+.guide-num{font-size:32px;font-weight:700;color:var(--border);letter-spacing:-.04em;line-height:1}
+.guide-cat{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
+.guide-title{font-size:16px;font-weight:700;letter-spacing:-.02em;color:var(--text);line-height:1.3;margin-bottom:4px;transition:color .15s}
+.guide-item:hover .guide-title{color:var(--blue)}
+.guide-meta{font-size:12px;color:var(--muted)}
+
+/* BIG FEATURE */
+.big-feature{background:var(--bg2);padding:60px 0}
+.feature-in{max-width:1200px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.feature-img{aspect-ratio:4/3;background:var(--border);overflow:hidden;border-radius:8px}
+.feature-img img{width:100%;height:100%;object-fit:cover}
+.feature-eyebrow{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:12px}
+.feature-title{font-size:clamp(28px,3.5vw,40px);font-weight:700;letter-spacing:-.03em;line-height:1.15;color:var(--text);margin-bottom:16px}
+.feature-body{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:24px}
+.feature-list{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+.feature-list-item{display:flex;gap:10px;font-size:14px;color:var(--text)}
+.feature-list-item::before{content:"";width:6px;height:6px;background:var(--blue);border-radius:50%;margin-top:6px;flex-shrink:0}
+.btn-navy{background:var(--navy);color:#fff;font-size:14px;font-weight:600;padding:12px 24px;border-radius:6px;display:inline-block;transition:background .15s}
+.btn-navy:hover{background:var(--navy2)}
+
+/* NEWSLETTER */
+.newsletter{background:var(--navy);padding:64px 0}
+.nl-in{max-width:560px;margin:0 auto;padding:0 24px;text-align:center}
+.nl-eyebrow{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#60a5fa;margin-bottom:10px}
+.nl-title{font-size:clamp(28px,4vw,38px);font-weight:700;letter-spacing:-.03em;color:#fff;margin-bottom:10px}
+.nl-sub{font-size:14px;color:rgba(255,255,255,.5);margin-bottom:28px}
+.nl-form{display:flex;gap:0;border-radius:6px;overflow:hidden}
+.nl-input{flex:1;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.15);border-right:none;color:#fff;font-size:14px;font-family:var(--font);padding:13px 16px;outline:none}
+.nl-input::placeholder{color:rgba(255,255,255,.35)}
+.nl-btn{background:var(--blue);color:#fff;font-size:14px;font-weight:600;padding:13px 22px;border:none;cursor:pointer;font-family:var(--font);transition:background .15s}
+.nl-btn:hover{background:var(--blue2)}
+
+/* FOOTER */
+footer{background:#0f1b35;padding:48px 0 24px}
+.footer-in{max-width:1200px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:32px}
+.footer-logo{font-size:20px;font-weight:700;color:#fff;letter-spacing:-.03em;margin-bottom:8px}
+.footer-logo span{color:#60a5fa}
+.footer-desc{font-size:13px;color:rgba(255,255,255,.4);line-height:1.6}
+.footer-head{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:14px}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:13px;color:rgba(255,255,255,.5);transition:color .15s}
+.footer-links a:hover{color:#60a5fa}
+.footer-bottom{max-width:1200px;margin:0 auto;padding:24px 24px 0;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between}
+.footer-copy{font-size:12px;color:rgba(255,255,255,.25)}
+
+@media(max-width:1000px){
+  .hero-in{grid-template-columns:1fr}
+  .hero-card{display:none}
+  .prop-grid{grid-template-columns:1fr 1fr}
+  .feature-in{grid-template-columns:1fr}
+  .footer-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .nav-links{display:none}
+  .prop-grid{grid-template-columns:1fr}
+  .guide-list{grid-template-columns:1fr}
+  .footer-in{grid-template-columns:1fr}
+}
+/* page */
+.ab{max-width:840px;margin:0 auto;padding:56px 24px 88px}
+.ab-kicker{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2.5px;color:#1e3a6e;margin-bottom:14px}
+.ab-title{font-family:Georgia,serif;font-size:clamp(28px,5vw,42px);font-weight:800;line-height:1.15;color:#111827;margin:0 0 16px}
+.ab-lead{font-size:17px;line-height:1.7;color:#6b7280;margin-bottom:40px}
+.ab-author{display:flex;gap:16px;align-items:center;background:#f3f4f6;border:1px solid #d1d5db;border-radius:10px;padding:20px 22px;margin-bottom:32px}
+.ab-avatar{width:56px;height:56px;border-radius:50%;background:#1e3a6e;color:#f9fafb;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ab-name{font-size:17px;font-weight:700;color:#111827}
+.ab-role{font-size:13px;color:#1e3a6e;font-weight:600;margin-top:2px}
+.ab-h2{font-family:Georgia,serif;font-size:20px;font-weight:700;color:#111827;margin:40px 0 14px}
+.ab-p{font-size:15px;line-height:1.85;color:#6b7280;margin-bottom:14px}
+.ab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:14px}
+.ab-card{background:#f3f4f6;border:1px solid #d1d5db;border-radius:10px;padding:18px}
+.ab-card-av{width:38px;height:38px;border-radius:50%;background:#1e3a6e;color:#f9fafb;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.ab-card-name{font-size:14px;font-weight:700;color:#111827}
+.ab-card-role{font-size:11px;font-weight:600;color:#1e3a6e;margin:2px 0 7px}
+.ab-card-bio{font-size:12px;line-height:1.65;color:#6b7280}
+.ab-cta{margin-top:44px;background:#f3f4f6;border:1px solid #d1d5db;border-radius:12px;padding:30px 26px;text-align:center}
+.ab-cta h3{font-family:Georgia,serif;font-size:19px;font-weight:700;color:#111827;margin:0 0 8px}
+.ab-cta p{font-size:14px;color:#6b7280;margin:0 0 18px}
+.ab-cta a{display:inline-block;background:#1e3a6e;color:#f9fafb;padding:11px 28px;border-radius:7px;font-size:14px;font-weight:700;text-decoration:none}
 </style>
 </head>
 <body>
-
-<nav class="gn">
-  <a href="./" class="gn-logo">Mash Estate</a>
-  <div class="gn-links">
-    <a href="./">Home</a>
-    <a href="about.html">About</a>
+<nav class="site-nav">
+  <div class="nav-in">
+    <a href="./" class="nav-logo">Mash<span>Estate</span></a>
+    <div class="nav-links">
+      <a href="./">Buying Guides</a>
+      <a href="./">Market Data</a>
+      <a href="./">Investment</a>
+      <a href="./">First-Time Buyers</a>
+      <a href="./">Mortgage</a>
+    </div>
+    <a href="./" class="nav-btn">Free Buyer's Guide</a>
   </div>
 </nav>
-
-<div class="gab-hero">
-  <div class="gab-hero-top">
-    <div class="gab-avi">DM</div>
+<main class="ab">
+  <div class="ab-kicker">About Mash Estate</div>
+  <h1 class="ab-title">Real Estate Investing Intelligence</h1>
+  <p class="ab-lead">Real estate investing analysis from an investor who also practices property law. The numbers and the legal reality.</p>
+  <div class="ab-author">
+    <div class="ab-avatar">DM</div>
     <div>
-      <h1>David Mash</h1>
-      <div class="gab-hero-role">Real Estate Investor & Property Law Consultant</div>
-      <div class="gab-hero-cat">Real Estate Investing</div>
+      <div class="ab-name">David Mash</div>
+      <div class="ab-role">Real Estate Investor & Property Law Consultant</div>
     </div>
   </div>
-  <div class="gab-stats">
-    <div class="gab-stat"><div class="gab-stat-num">50+</div><div class="gab-stat-lbl">Stores Audited</div></div>
-    <div class="gab-stat"><div class="gab-stat-num">8 Yrs</div><div class="gab-stat-lbl">In Ecommerce</div></div>
-    <div class="gab-stat"><div class="gab-stat-num">$100M+</div><div class="gab-stat-lbl">GMV Analyzed</div></div>
-    <div class="gab-stat"><div class="gab-stat-num">Independent</div><div class="gab-stat-lbl">No Vendor Ties</div></div>
+  <div class="ab-h2">Why this site exists</div>
+  <p class="ab-p">I bought my first rental property at twenty-seven with money saved over four years working as a paralegal. It was a duplex in a mid-tier market that needed work. The work cost more than planned and the first tenant gave me an education in lease enforcement I could not have gotten any other way.</p>
+    <p class="ab-p">I went to law school while holding that property. Real estate law was not my initial focus, but the intersection of contract law, landlord-tenant regulation, and property rights kept pulling me back. I graduated and specialized in exactly that intersection.</p>
+    <p class="ab-p">Fourteen doors across three markets and nine years as a practicing attorney. The combination is unusual enough that clients specifically seek it out. They want to know what a deal looks like on paper and what it looks like when something goes wrong legally. Those are often two very different analyses.</p>
+    <p class="ab-p">What I have seen consistently in real estate investing content is a gap between the numbers analysis and the legal reality. Underwriting models show projected cash flow, but they rarely price in the legal exposure that comes with certain deal structures, certain markets, or certain tenant profiles.</p>
+    <p class="ab-p">Mash Estate is where I publish the combined analysis - deal structures and their legal implications, market reads that consider both financial and regulatory environments, and the landmines in due diligence that most investors do not know to look for.</p>
+  <div class="ab-h2">Who contributes</div>
+  <p class="ab-p">Alongside David Mash, a small group of practitioners review and pressure-test what gets published here.</p>
+  <div class="ab-grid">
+      <div class="ab-card">
+        <div class="ab-card-av">MW</div>
+        <div class="ab-card-name">Marcus Webb</div>
+        <div class="ab-card-role">Senior Contributor</div>
+        <div class="ab-card-bio">15 years in institutional sales at two major banks. Writes about macro dynamics and how they translate to retail positioning.</div>
+      </div>
+      <div class="ab-card">
+        <div class="ab-card-av">JT</div>
+        <div class="ab-card-name">James Thorne</div>
+        <div class="ab-card-role">Technical Contributor</div>
+        <div class="ab-card-bio">Full-stack developer who switched to financial writing. Covers the engineering reality behind products and platforms.</div>
+      </div>
+      <div class="ab-card">
+        <div class="ab-card-av">RK</div>
+        <div class="ab-card-name">Rachel Kim</div>
+        <div class="ab-card-role">Contributing Analyst</div>
+        <div class="ab-card-bio">Former hedge fund researcher. Covers quantitative methods and market microstructure. Has contributed to three academic finance papers.</div>
+      </div>
   </div>
-</div>
-
-<!-- hero-banner -->
-<div id="pxl-wrap" style="width:100%;height:200px;overflow:hidden;position:relative;background:var(--bg2);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);">
-  <img id="pxl-img" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s;display:block;" alt="">
-  <a id="pxl-cred" href="https://www.pexels.com" target="_blank" rel="noopener" style="position:absolute;bottom:6px;right:10px;font-size:10px;color:rgba(255,255,255,.5);opacity:0;transition:opacity .6s;text-decoration:none;">Photo: Pexels</a>
-</div>
-
-<div class="gab-layout">
-
-  <div class="gab-main">
-
-    <div class="gab-sec">
-      <div class="gab-sec-hd">Background</div>
-      <p class="gab-p">I bought my first rental property at twenty-seven with money saved over four years working as a paralegal. It was a duplex in a mid-tier market that needed work. The work cost more than planned and the first tenant gave me an education in lease enforcement I could not have gotten any other way.</p>
-    <p class="gab-p">I went to law school while holding that property. Real estate law was not my initial focus, but the intersection of contract law, landlord-tenant regulation, and property rights kept pulling me back. I graduated and specialized in exactly that intersection.</p>
-    <p class="gab-p">Fourteen doors across three markets and nine years as a practicing attorney. The combination is unusual enough that clients specifically seek it out. They want to know what a deal looks like on paper and what it looks like when something goes wrong legally. Those are often two very different analyses.</p>
-    <p class="gab-p">What I have seen consistently in real estate investing content is a gap between the numbers analysis and the legal reality. Underwriting models show projected cash flow, but they rarely price in the legal exposure that comes with certain deal structures, certain markets, or certain tenant profiles.</p>
-    <p class="gab-p">Mash Estate is where I publish the combined analysis - deal structures and their legal implications, market reads that consider both financial and regulatory environments, and the landmines in due diligence that most investors do not know to look for.</p>
-    </div>
-
-    <div class="gab-sec">
-      <div class="gab-sec-hd">Areas of Expertise</div>
-      <div class="gab-exp">
-        <div class="gab-exp-card">
-          <div class="gab-exp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
-          <div><div class="gab-exp-head">Conversion Optimization</div><div class="gab-exp-body">Product page structure, checkout friction removal, and trust signal placement that move conversion rates.</div></div>
-        </div>
-        <div class="gab-exp-card">
-          <div class="gab-exp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
-          <div><div class="gab-exp-head">AOV & Revenue Growth</div><div class="gab-exp-body">Post-purchase upsells, bundle architecture, and pricing strategies that lift average order value.</div></div>
-        </div>
-        <div class="gab-exp-card">
-          <div class="gab-exp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-          <div><div class="gab-exp-head">A/B Testing Frameworks</div><div class="gab-exp-body">Structuring experiments that produce valid results  -  not the underpowered tests that fill most CRO reports.</div></div>
-        </div>
-        <div class="gab-exp-card">
-          <div class="gab-exp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-          <div><div class="gab-exp-head">Customer Retention</div><div class="gab-exp-body">Email flows, LTV segmentation, and the post-purchase experience that turns first buyers into repeat customers.</div></div>
-        </div>
-        <div class="gab-exp-card">
-          <div class="gab-exp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-          <div><div class="gab-exp-head">Analytics & Attribution</div><div class="gab-exp-body">Setting up measurement that actually reflects what's driving revenue  -  not what's easiest to track.</div></div>
-        </div>
-        <div class="gab-exp-card">
-          <div class="gab-exp-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></div>
-          <div><div class="gab-exp-head">Checkout & Funnel</div><div class="gab-exp-body">Reducing drop-off at every stage of the purchase path from landing page through order confirmation.</div></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="gab-sec">
-      <div class="gab-sec-hd">How I Approach a Store Audit</div>
-      <div class="gab-steps">
-        <div class="gab-step"><div class="gab-step-n">1</div><div><div class="gab-step-head">Traffic & Source Analysis</div><div class="gab-step-body">Understand where buyers come from, what they expect when they arrive, and how well the landing experience matches that expectation.</div></div></div>
-        <div class="gab-step"><div class="gab-step-n">2</div><div><div class="gab-step-head">Product Page Review</div><div class="gab-step-body">Evaluate information hierarchy, image quality, trust signals, objection handling, and call-to-action clarity against what actually drives add-to-cart.</div></div></div>
-        <div class="gab-step"><div class="gab-step-n">3</div><div><div class="gab-step-head">Cart & Checkout Mapping</div><div class="gab-step-body">Identify every point of friction between add-to-cart and completed purchase  -  form fields, payment options, shipping clarity, and mobile experience.</div></div></div>
-        <div class="gab-step"><div class="gab-step-n">4</div><div><div class="gab-step-head">Post-Purchase & Retention</div><div class="gab-step-body">Assess how well the brand captures repeat purchase intent, upsells at confirmation, and sets up email flows for LTV growth.</div></div></div>
-        <div class="gab-step"><div class="gab-step-n">5</div><div><div class="gab-step-head">Prioritized Recommendations</div><div class="gab-step-body">Rank findings by expected impact and implementation cost. Most stores have three or four high-leverage changes and a long tail of minor improvements.</div></div></div>
-      </div>
-    </div>
-
-    <div class="gab-sec">
-      <div class="gab-sec-hd">About Mash Estate</div>
-      <p class="gab-p">Real estate investing analysis from an investor who also practices property law. The numbers and the legal reality.</p>
-      <p class="gab-p">Real estate investing intelligence from an investor and property law background.</p>
-    </div>
-
-    <div class="gab-sec">
-      <div class="gab-sec-hd">Contributors</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-        <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
-      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">MW</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;color:var(--txt)">Marcus Webb</div>
-        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Senior Contributor</div>
-        <div style="font-size:12px;color:var(--mut);line-height:1.6">15 years in institutional sales at two major banks. Writes about macro dynamics and how they translate to retail positioning.</div>
-      </div>
-    </div>
-    <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
-      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">JT</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;color:var(--txt)">James Thorne</div>
-        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Technical Contributor</div>
-        <div style="font-size:12px;color:var(--mut);line-height:1.6">Full-stack developer who switched to financial writing. Covers the engineering reality behind products and platforms.</div>
-      </div>
-    </div>
-    <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
-      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">RK</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;color:var(--txt)">Rachel Kim</div>
-        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">Contributing Analyst</div>
-        <div style="font-size:12px;color:var(--mut);line-height:1.6">Former hedge fund researcher. Covers quantitative methods and market microstructure. Has contributed to three academic finance papers.</div>
-      </div>
-    </div>
-    <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start">
-      <div style="width:40px;height:40px;border-radius:50%;background:var(--pri);color:#000;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0">LF</div>
-      <div>
-        <div style="font-size:14px;font-weight:700;color:var(--txt)">Lena Fischer</div>
-        <div style="font-size:11px;color:var(--pri);margin-bottom:5px;font-weight:600">International Contributor</div>
-        <div style="font-size:12px;color:var(--mut);line-height:1.6">Based in Frankfurt. Covers European regulatory developments, cross-border market dynamics, and emerging market capital flows.</div>
-      </div>
-    </div>
-      </div>
-    </div>
-
-    <div class="gab-sec">
-      <div class="gab-sec-hd">Reader Comments</div>
-      <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:10px;padding:4px 20px">
-        <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">B</div>
-        <span style="font-size:13px;font-weight:600;color:var(--txt)">Brett W.</span>
-        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
-      </div>
-      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">I appreciate that corrections get made openly and visibly. That kind of intellectual honesty is rare and worth rewarding with attention.</div>
-    </div>
-    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">C</div>
-        <span style="font-size:13px;font-weight:600;color:var(--txt)">Chris V.</span>
-        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
-      </div>
-      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">Refreshing to read something that acknowledges uncertainty instead of pretending everything is obvious in hindsight.</div>
-    </div>
-    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">N</div>
-        <span style="font-size:13px;font-weight:600;color:var(--txt)">Nadia F.</span>
-        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
-      </div>
-      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">The writing here treats readers as intelligent adults. No dumbing down, no sensationalism, just clear analysis.</div>
-    </div>
-    <div style="padding:14px 0;border-bottom:1px solid var(--brd)">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">S</div>
-        <span style="font-size:13px;font-weight:600;color:var(--txt)">Serena T.</span>
-        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
-      </div>
-      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">I have shared this with three colleagues already. The kind of analysis that used to be locked behind expensive research subscriptions.</div>
-    </div>
-    <div style="padding:14px 0;border-bottom:none">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--pri)22;border:1px solid var(--pri)44;color:var(--pri);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center">D</div>
-        <span style="font-size:13px;font-weight:600;color:var(--txt)">Denise L.</span>
-        <span style="font-size:10px;color:var(--mut);margin-left:auto">Verified reader</span>
-      </div>
-      <div style="font-size:13px;color:var(--txt);line-height:1.65;padding-left:36px">I have been following this site for over a year. The consistency and quality have only gone up. Very few places I can say that about.</div>
-    </div>
-      </div>
-    </div>
-
+  <div class="ab-cta">
+    <h3>The Property Brief</h3>
+    <p>Monthly market analysis, deal structures, and investor insights.</p>
+    <a href="./">Read the latest</a>
   </div>
-
-  <aside class="gab-side">
-
-    <div class="gab-nl">
-      <h3>The Property Brief</h3>
-      <p>Monthly market analysis, deal structures, and investor insights.</p>
-      <form id="gab-nl-form" onsubmit="nlSub(event)">
-        <input type="email" class="gab-nl-in" placeholder="your@email.com" required>
-        <button type="submit" class="gab-nl-btn">Subscribe</button>
-      </form>
+</main>
+<footer>
+  <div class="footer-in">
+    <div>
+      <div class="footer-logo">Mash<span>Estate</span></div>
+      <p class="footer-desc">Real estate clarity for buyers, sellers, and investors who want the full picture.</p>
     </div>
-
-    <div class="gab-card">
-      <div class="gab-card-lbl">Credentials</div>
-      <p style="font-size:13px;color:var(--mut);line-height:1.8;margin-bottom:8px">Real Estate Investor & Property Law Consultant</p>
-      <p style="font-size:13px;color:var(--mut);line-height:1.8">Independent consultant. No platform sponsorships. No affiliated tools.</p>
+    <div>
+      <div class="footer-head">Guides</div>
+      <div class="footer-links">
+        <a href="./">First-Time Buyers</a>
+        <a href="./">Investment</a>
+        <a href="./">Mortgage</a>
+        <a href="./">Market Reports</a>
+      </div>
     </div>
-
-    <div class="gab-card">
-      <div class="gab-card-lbl">Focus Topics</div>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
-        <li style="font-size:13px;color:var(--mut);display:flex;align-items:center;gap:8px"><span style="color:var(--pri);font-weight:700">→</span> Shopify CRO</li>
-        <li style="font-size:13px;color:var(--mut);display:flex;align-items:center;gap:8px"><span style="color:var(--pri);font-weight:700">→</span> DTC Growth Strategy</li>
-        <li style="font-size:13px;color:var(--mut);display:flex;align-items:center;gap:8px"><span style="color:var(--pri);font-weight:700">→</span> Paid Acquisition</li>
-        <li style="font-size:13px;color:var(--mut);display:flex;align-items:center;gap:8px"><span style="color:var(--pri);font-weight:700">→</span> Email & SMS Revenue</li>
-        <li style="font-size:13px;color:var(--mut);display:flex;align-items:center;gap:8px"><span style="color:var(--pri);font-weight:700">→</span> Post-Purchase UX</li>
-      </ul>
+    <div>
+      <div class="footer-head">Resources</div>
+      <div class="footer-links">
+        <a href="./">Calculators</a>
+        <a href="./">Checklists</a>
+        <a href="./">Glossary</a>
+      </div>
     </div>
-
-    <div class="gab-card" id="gab-recent">
-      <div class="gab-card-lbl">Recent Articles</div>
-      <div id="gab-recent-list" style="display:flex;flex-direction:column;gap:10px"></div>
+    <div>
+      <div class="footer-head">Site</div>
+      <div class="footer-links">
+        <a href="./about/">About</a>
+        <a href="./">Privacy</a>
+      </div>
     </div>
-
-  </aside>
-</div>
-
-<footer class="gft">
-  <span class="gft-copy">© Mash Estate</span>
-  <div class="gft-links">
-    <a href="./">Home</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="sms.html">SMS Policy</a><a href="meta-policy.html">Meta Policy</a>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">&copy; 2026 MashEstate. All rights reserved.</div>
+    <div class="footer-copy">Real estate intelligence.</div>
   </div>
 </footer>
 
 <script>
-function nlSub(e){e.preventDefault();document.getElementById('gab-nl-form').innerHTML='<div style="color:#fff;font-weight:600;padding:6px 0">Subscribed  -  first issue incoming.</div>';}
-async function loadRecent(){
-  try{
-    const r=await fetch('./articles.json');if(!r.ok)return;
-    const posts=await r.json();
-    const el=document.getElementById('gab-recent-list');
-    if(el)el.innerHTML=posts.slice(0,4).map(p=>`<a href="./${p.slug||'#'}/" style="text-decoration:none;color:inherit;display:block"><div style="border-bottom:1px solid var(--brd);padding-bottom:8px"><div style="font-size:9px;color:var(--pri);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px">Real Estate Investing</div><div style="font-size:13px;font-weight:600;color:var(--txt);line-height:1.4">${p.title}</div><div style="font-size:10px;color:var(--mut);margin-top:3px">${p.date_iso||''}</div></div></a>`).join('');
-  }catch(e){}
+const PLACEHOLDER_ARTS=[
+  {title:"How to Make a Competitive Offer Without Overpaying in a Hot Market",slug:"competitive-offer-guide",cat:"buying",excerpt:"The gap between list price and winning bid is narrowing. Here's how to position your offer without stretching past your ceiling.",mins:8},
+  {title:"Fixer-Upper vs. Move-In Ready: The Real Cost Comparison",slug:"fixer-upper-vs-move-in",cat:"buying",excerpt:"That $50k discount can easily become $120k in work. The honest math on fixer-uppers in 2025.",mins:9},
+  {title:"How Rising Rates Change the Rent-vs-Buy Calculation",slug:"rent-vs-buy-2025",cat:"market",excerpt:"At 6.8%, the classic break-even timeline has shifted significantly. Here's the updated framework.",mins:7},
+  {title:"The Down Payment Trap: How Much You Actually Need",slug:"down-payment-guide",cat:"mortgage",excerpt:"20% down is a rule of thumb, not a law. The real tradeoffs between 5%, 10%, and 20% down in today's market.",mins:6},
+  {title:"10 Questions to Ask at Every Open House",slug:"open-house-questions",cat:"buying",excerpt:"Most buyers ask about square footage. Smart buyers ask about the HVAC age, HOA reserves, and flood history.",mins:5},
+  {title:"What No One Tells You About Buying in an HOA Community",slug:"hoa-buyer-guide",cat:"buying",excerpt:"HOA fees, special assessments, restrictions, and reserve funds - the due diligence checklist most buyers skip.",mins:8},
+  {title:"How to Read a Real Estate Market Report Like an Analyst",slug:"read-market-report",cat:"market",excerpt:"Median price vs. average price, days on market, absorption rate - the six numbers that tell the real story.",mins:7},
+  {title:"First-Time Investor: Choosing Between Single-Family and Multi-Family",slug:"sfh-vs-multifamily",cat:"investment",excerpt:"SFH is simpler; multi-family scales faster. The decision depends on which problem you want to solve first.",mins:10},
+];
+
+const IMGS=[
+  'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=75',
+  'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=75',
+  'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=75',
+  'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=75',
+  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=75',
+  'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=75',
+];
+
+let arts=[];
+
+async function load(){
+  try{const r=await fetch("./articles.json");if(r.ok){arts=await r.json();}else{arts=PLACEHOLDER_ARTS;}}
+  catch{arts=PLACEHOLDER_ARTS;}
+  renderGrid();
+  renderGuides();
+  if(arts[0]){
+    const hc=document.getElementById("heroCard");
+    if(hc){hc.querySelector(".hero-card-title").textContent=arts[0].title;hc.querySelector(".hero-card-label").textContent=arts[0].cat||"Featured";hc.href=`./${arts[0].slug}/`;}
+  }
 }
-loadRecent();
-/* banner loader: pexels → unsplash → picsum */
-(function(){
-  var el=document.getElementById('pxl-img');
-  var cr=document.getElementById('pxl-cred');
-  if(!el)return;
-  var SOURCES=['pexels', 'unsplash'];
-  var Q=encodeURIComponent('real estate house property investment');
-  var FALLBACK='https://picsum.photos/seed/314/1400/400';
-  function showImg(src,cred){
-    el.onload=function(){el.style.opacity='1';if(cred&&cr){cr.textContent=cred;cr.style.opacity='1';}};
-    el.src=src;
-  }
-  function tryUnsplash(){
-    var uk=localStorage.getItem('unsplashKey');
-    if(!uk){showImg(FALLBACK,'');return;}
-    fetch('https://api.unsplash.com/photos/random?query='+Q+'&count=1&orientation=landscape&client_id='+uk)
-      .then(function(r){return r.json();}).then(function(d){
-        var p=Array.isArray(d)?d[0]:d;
-        if(p&&p.urls&&p.urls.regular){showImg(p.urls.regular,'Photo: '+((p.user&&p.user.name)||'Unsplash')+' / Unsplash');}
-        else{showImg(FALLBACK,'');}
-      }).catch(function(){showImg(FALLBACK,'');});
-  }
-  function tryPexels(){
-    var k=localStorage.getItem('pexelsKey');
-    if(!k){if(SOURCES.indexOf('unsplash')>=0)tryUnsplash();else showImg(FALLBACK,'');return;}
-    fetch('https://api.pexels.com/v1/search?query='+Q+'&per_page=5&orientation=landscape',{headers:{Authorization:k}})
-      .then(function(r){return r.json();}).then(function(d){
-        if(d.photos&&d.photos[0]){showImg(d.photos[0].src.large,'Photo: Pexels');}
-        else if(SOURCES.indexOf('unsplash')>=0){tryUnsplash();}
-        else{showImg(FALLBACK,'');}
-      }).catch(function(){if(SOURCES.indexOf('unsplash')>=0)tryUnsplash();else showImg(FALLBACK,'');});
-  }
-  if(SOURCES.indexOf('pexels')>=0){tryPexels();}
-  else if(SOURCES.indexOf('unsplash')>=0){tryUnsplash();}
-  else{showImg(FALLBACK,'');}
-})();
+
+function renderGrid(){
+  document.getElementById("propGrid").innerHTML=arts.slice(0,6).map((a,i)=>`
+    <a href="./${a.slug}/" class="prop-card">
+      <div class="prop-card-img"><img src="${IMGS[i%IMGS.length]}" alt="${a.title}" loading="lazy"></div>
+      <div class="prop-card-body">
+        <span class="prop-label">${a.cat||"Guide"}</span>
+        <h3 class="prop-title">${a.title}</h3>
+        <p class="prop-excerpt">${a.excerpt||""}</p>
+        <div class="prop-meta"><span>${a.mins} min read</span></div>
+      </div>
+    </a>`).join("");
+}
+
+function renderGuides(){
+  document.getElementById("guideList").innerHTML=arts.slice(0,8).map((a,i)=>`
+    <a href="./${a.slug}/" class="guide-item">
+      <span class="guide-num">${String(i+1).padStart(2,"0")}</span>
+      <span><div class="guide-cat">${a.cat||"Guide"}</div><div class="guide-title">${a.title}</div><div class="guide-meta">${a.mins} min read</div></span>
+    </a>`).join("");
+}
+
+load();
 </script>
-</body></html>
+</body>
+</html>
