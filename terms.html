@@ -70,8 +70,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;line-hei
 .btn-ghost{border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.03)}
 .btn-ghost:hover{border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.07)}
 .scroll-hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
-.scroll-hint i{width:1px;height:34px;background:linear-gradient(var(--gold),transparent);display:block;animation:dropLine 2s ease-in-out infinite}
-@keyframes dropLine{0%,100%{transform:scaleY(.4);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+.scroll-hint i{width:1px;height:34px;background:linear-gradient(var(--gold),transparent);display:block;animation:dropLine 2s ease-in-out infinite}@keyframes dropLine{0%,100%{transform:scaleY(.4);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
 
 /* TRUST STRIP */
 .trust{border-block:1px solid var(--line);background:var(--bg-soft)}
@@ -206,17 +205,14 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
 
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
-.reveal.in{opacity:1;transform:none}
-
-@media(max-width:1000px){
+.reveal.in{opacity:1;transform:none}@media(max-width:1000px){
   .story-grid,.agent-grid{grid-template-columns:1fr;gap:40px}
   .vgrid,.tgrid{grid-template-columns:repeat(2,1fr)}
   .agrid{grid-template-columns:repeat(2,1fr)}
   .stat-grid{grid-template-columns:repeat(2,1fr);gap:36px 24px}
   .foot-grid{grid-template-columns:1fr 1fr}
   .agent-photo{max-width:300px}
-}
-@media(max-width:680px){
+}@media(max-width:680px){
   .wrap{padding:0 18px}
   .nav-in{padding:0 18px;height:64px;gap:14px}
   .nav-links{position:fixed;inset:64px 0 auto 0;flex-direction:column;background:rgba(12,16,24,.98);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:14px 18px;gap:2px;margin:0;transform:translateY(-130%);transition:transform .3s;z-index:119}
@@ -234,8 +230,7 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
   .btn{flex:1;justify-content:center}
   .hero-btns{width:100%}
   .scroll-hint{display:none}
-}
-@media(prefers-reduced-motion:reduce){
+}@media(prefers-reduced-motion:reduce){
   .reveal{transition:none;opacity:1;transform:none}
   html{scroll-behavior:auto}
   .scroll-hint i{animation:none}
@@ -250,9 +245,7 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
 .lg-p a{color:#1e3a6e}
 .lg-ul{color:#6b7280;margin:0 0 13px 22px;line-height:1.9;font-size:15px}
 .lg-ul li{margin-bottom:4px}
-.lg-box{background:#f3f4f6;border:1px solid #d1d5db;border-radius:6px;padding:16px 20px;margin:16px 0 20px}
-@media(max-width:640px){.lg-wrap{padding-left:16px;padding-right:16px}}
-</style>
+.lg-box{background:#f3f4f6;border:1px solid #d1d5db;border-radius:6px;padding:16px 20px;margin:16px 0 20px}@media(max-width:640px){.lg-wrap{padding-left:16px;padding-right:16px}}</style>
 </head>
 <body data-page-depth="0">
 <header class="site-header" id="siteHeader">
@@ -444,14 +437,14 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
       '<defs><linearGradient id="ag'+i+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="'+c[0]+'"/><stop offset="1" stop-color="'+c[1]+'"/></linearGradient></defs>'+
       '<rect width="400" height="200" fill="url(#ag'+i+')"/>'+
       '<g stroke="#c8a96a" stroke-width="1.5" fill="none" opacity=".55">'+
-      '<path d="M120 160V96l80-52 80 52v64H120Z"/><path d="M120 160h160M155 160v-40h40v40M215 120h40v40h-40z"/></g>'+
-      '<g stroke="#5b8cff" stroke-width="1" opacity=".3" fill="none"><path d="M20 30h70M20 30v34"/><path d="M380 170h-60M380 170v-34"/></g>'+
+      '<path d="M120 160V96l80-52 80 52v64H120Z"/></g>'+
+      '<g stroke="#5b8cff" stroke-width="1" opacity=".3" fill="none"><path d="M20 30h70M20 30v34"/></g>'+
       '</svg>';
   }
   function esc(s){var d=document.createElement('div');d.textContent=s==null?'':String(s);return d.innerHTML;}
   function emptyState(){
     grid.innerHTML='<div class="empty">'+
-      '<svg width="46" height="46" viewBox="0 0 24 24" fill="none"><path d="M3 11l9-7 9 7M5 9.5V20h14V9.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 20v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>'+
+      '<svg width="46" height="46" viewBox="0 0 24 24" fill="none"><path d="M3 11l9-7 9 7M5 9.5V20h14V9.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>'+
       '<h3>New listings and guides coming soon</h3>'+
       '<p>Fresh market reports and buying guides are being prepared. Join the Weekly Property Brief to be first to read them.</p>'+
       '</div>';
