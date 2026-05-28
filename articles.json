@@ -1,0 +1,61 @@
+[
+  {
+    "title": "The 2019 First-Time Home Buyer Incentive: What It Actually Did (and Didn't Do) for Canadian Buyers",
+    "slug": "2019-first-time-home-buyer-incentive-canada",
+    "meta_description": "Canada's 2019 First-Time Home Buyer Incentive launched with big promises. Here's what it meant for buyers at the time - and why the reaction was so mixed.",
+    "date": "May 20, 2019",
+    "date_iso": "2019-05-20",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/36729688/pexels-photo-36729688.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cmhc-schl.gc.ca",
+      "crea.ca",
+      "bankofcanada.ca"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "COVID-19 Killed the Open House in 2020 - and Canadian Real Estate Didn't Collapse",
+    "slug": "covid-real-estate-canada-2020",
+    "meta_description": "In 2020, COVID-19 forced Canadian real estate to go virtual overnight. Here's what actually happened, what worked, and what it means for buyers and sellers.",
+    "date": "August 02, 2020",
+    "date_iso": "2020-08-02",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/5178064/pexels-photo-5178064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cmhc-schl.gc.ca",
+      "crea.ca",
+      "fsrao.ca",
+      "nar.realtor"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Canada's Mortgage Rule Overhaul in 2024: What It Actually Changed for Buyers",
+    "slug": "canada-mortgage-rules-2024-changes",
+    "meta_description": "Canada rewrote its mortgage rules in late 2024. Here's what the changes meant for real buyers and sellers, from a practitioner who watched it unfold.",
+    "date": "May 21, 2024",
+    "date_iso": "2024-05-21",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/31974125/pexels-photo-31974125.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cmhc-schl.gc.ca",
+      "ratehub.ca",
+      "crea.ca",
+      "bankofcanada.ca"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  }
+]
