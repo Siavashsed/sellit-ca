@@ -15,7 +15,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Mortgage & Finance"
   },
   {
     "title": "COVID-19 Killed the Open House in 2020 - and Canadian Real Estate Didn't Collapse",
@@ -34,7 +35,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Selling Strategy"
   },
   {
     "title": "Canada's Mortgage Rule Overhaul in 2024: What It Actually Changed for Buyers",
@@ -53,6 +55,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Mortgage & Finance"
   }
 ]
