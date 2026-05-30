@@ -304,8 +304,13 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
 /* page */
 
 
-.ap,.ap-concl,.ap-pull,.ap-body,.ap-deck{box-sizing:border-box;overflow-wrap:break-word;word-wrap:break-word;word-break:normal;hyphens:auto;max-width:100%}
-.ap{max-width:720px;margin:0 auto;padding:56px 24px 24px;font-family:'Inter',system-ui,sans-serif}
+/* Defensive width constraint - earlier cascades on some sites were letting
+   the conclusion + sources block escape the 720px column on wide screens.
+   Pin every descendant of .ap to max-width:100% and the wrapper to a hard
+   720px so nothing can break out regardless of homepage CSS quirks. */
+.ap,.ap *,.ap-concl,.ap-concl *,.ap-pull,.ap-body,.ap-body *,.ap-deck{box-sizing:border-box;overflow-wrap:break-word;word-wrap:break-word;word-break:normal;hyphens:auto;max-width:100%}
+.ap{max-width:720px;margin:0 auto;padding:56px 24px 24px;font-family:'Inter',system-ui,sans-serif;position:relative;overflow:visible}
+.ap-body,.ap-concl,.ap-deck,.ap-pull{max-width:none;width:auto}
 .ap-kicker{display:flex;align-items:center;gap:12px;font-family:'Fraunces',Georgia,serif;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#c8a96a;margin:0 0 26px}
 .ap-kicker::before{content:'';width:28px;height:1px;background:#c8a96a}
 .ap-kicker .ap-sep{opacity:.4;font-weight:400;letter-spacing:1px;color:#8a8d96}
