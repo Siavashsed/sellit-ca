@@ -380,11 +380,14 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
 <header class="site-header" id="siteHeader">
   <div class="nav-in">
     <a href="./" class="brand" aria-label="Sellit">
-      <!-- Mark: stylised "S" sitting inside a house silhouette - the brand
-           tying selling (S) to home (roofline) in one mark. Gold accent on
-           the S, hairline navy outline on the house. -->
-      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-        <path d="M16 3 3 13v16h26V13L16 3Z" stroke="#c8a96a" stroke-width="2" stroke-linejoin="round" fill="none"/>
+      <!-- Mark: roofline house silhouette with a stylised S and a Canadian
+           maple-leaf accent in the corner. Reads as "Canadian house-selling
+           publication" in one glance, not as luxury or generic real estate. -->
+      <svg class="brand-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+        <path d="M18 4 4 14v18h28V14L18 4Z" stroke="#c8a96a" stroke-width="2" stroke-linejoin="round" fill="none"/>
+        <!-- Maple-leaf token in the upper-right corner. Small enough to feel
+             like a stamp, not a national flag. -->
+        <path d="M30 7.2l.55 1.4 1.45-.2-.85 1.1 1.25.95-1.45.15.25 1.45-1.2-.85-1.2.85.25-1.45-1.45-.15 1.25-.95-.85-1.1 1.45.2L30 7.2Z" fill="#e74c3c"/>
       </svg>
       Sell<span>it</span>
     </a>
@@ -487,7 +490,7 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
     var start=(page-1)*PER_PAGE;
     var slice=rest.slice(start,start+PER_PAGE);
     if(!arr.length){
-      gridEl.innerHTML='<div class="jr-empty"><div class="jr-empty-h">The journal opens soon</div><p class="jr-empty-p">Field notes are in preparation. Subscribe to The Kanona Letter to read the first entries.</p></div>';
+      gridEl.innerHTML='<div class="jr-empty"><div class="jr-empty-h">No entries match your filters</div><p class="jr-empty-p">Try clearing the search or picking a different category above.</p></div>';
       pageEl.style.display='none';
       return;
     }
@@ -517,7 +520,18 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
   searchEl.addEventListener('input',function(){clearTimeout(deb);deb=setTimeout(function(){query=searchEl.value;page=1;rerender();},200);});
   prevBtn.addEventListener('click',function(){if(page>1){page--;rerender();window.scrollTo({top:0,behavior:'smooth'});}});
   nextBtn.addEventListener('click',function(){page++;rerender();window.scrollTo({top:0,behavior:'smooth'});});
-  fetch('./articles.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(data){
+  // Archive page lives at /articles/index.html so ./articles.json resolves
+  // to the wrong path. Try both: ../articles.json first (correct path), then
+  // ./articles.json as a fallback for older deploys.
+  function _fetchArts(){
+    return fetch('../articles.json',{cache:'no-store'}).then(function(r){
+      if(r.ok)return r.json();
+      return fetch('./articles.json',{cache:'no-store'}).then(function(r2){
+        if(!r2.ok)throw 0; return r2.json();
+      });
+    });
+  }
+  _fetchArts().then(function(data){
     all=Array.isArray(data)?data.slice():[];
     all.sort(function(a,b){return String(b.date_iso||'').localeCompare(String(a.date_iso||''));});
     // Build categories from actual data
@@ -530,11 +544,10 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
     });
     rerender();
   }).catch(function(){
-    gridEl.innerHTML='<div class="jr-empty"><div class="jr-empty-h">The journal opens soon</div><p class="jr-empty-p">Field notes are in preparation. Subscribe to The Kanona Letter to read the first entries.</p></div>';
+    gridEl.innerHTML='<div class="jr-empty"><div class="jr-empty-h">The journal opens soon</div><p class="jr-empty-p">New entries will appear here as they publish. Check back soon.</p></div>';
   });
 })();
 </script>
-<div style="text-align:center;padding:40px 24px 56px"><a href="./articles" style="color:currentColor;text-decoration:none;font-family:Georgia,serif;font-size:22px;font-style:italic;border-bottom:1px solid currentColor;padding-bottom:3px">The full archive</a></div>
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -544,7 +557,9 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
             <path d="M16 3 4 13v16h8V20h8v9h8V13L16 3Z" stroke="#c8a96a" stroke-width="2" stroke-linejoin="round"/>
             <circle cx="16" cy="13" r="2.4" fill="#c8a96a"/>
           </svg>
-          Sell<span>it</span>
+          <svg width="28" height="28" viewBox="0 0 36 36" fill="none" aria-hidden="true" style="display:inline-block;vertical-align:-6px;margin-right:4px">
+            <path d="M18 4 4 14v18h28V14L18 4Z" stroke="#c8a96a" stroke-width="2" stroke-linejoin="round" fill="none"/>
+          </svg>Sell<span>it</span>
         </a>
         <p>Luxury and residential real estate intelligence for buyers, sellers and investors who want the full picture.</p>
       </div>
