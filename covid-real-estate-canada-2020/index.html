@@ -314,10 +314,10 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
 .ap-hero{margin:0 0 44px}
 .ap-hero img{width:100%;height:auto;max-height:560px;object-fit:cover;display:block;border-radius:2px}
 .ap-hero figcaption{font-family:'Inter',system-ui,sans-serif;font-style:italic;font-size:13px;color:#8a8d96;text-align:center;margin-top:12px}
-.ap-body{font-size:18px;line-height:1.78;color:#ecedf0}
-.ap-body p{margin:0 0 24px;color:#b8bcc6}
-.ap-body p.ap-lede{font-size:21px;line-height:1.55;color:#ecedf0;margin-bottom:28px}
-.ap-body p.ap-lede::first-letter{float:left;font-family:'Fraunces',Georgia,serif;font-size:76px;font-weight:800;line-height:.82;margin:8px 12px -2px 0;color:#c8a96a}
+.ap-body{font-size:17.5px;line-height:1.72;color:#ecedf0;letter-spacing:.005em;font-feature-settings:"kern","liga","onum"}
+.ap-body p{margin:0 0 22px;color:#b8bcc6}
+.ap-body p.ap-lede{font-size:19.5px;line-height:1.55;color:#ecedf0;margin-bottom:26px;font-weight:400}
+/* Drop-cap removed - it was reading as theatrical for tactical articles. */
 .ap-body h2,.ap-body .art-h2{font-family:'Fraunces',Georgia,serif;font-size:26px;font-weight:800;line-height:1.2;color:#ecedf0;margin:52px 0 16px;letter-spacing:-.3px}
 .ap-body h3,.ap-body .art-h3{font-family:'Fraunces',Georgia,serif;font-size:19px;font-weight:700;color:#ecedf0;margin:34px 0 12px;letter-spacing:-.1px}
 .ap-body h4{font-family:'Fraunces',Georgia,serif;font-size:14px;font-weight:700;color:#ecedf0;margin:24px 0 10px;text-transform:uppercase;letter-spacing:1.2px}
@@ -344,7 +344,6 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
   .ap-deck{font-size:18px}
   .ap-body{font-size:17px}
   .ap-body p.ap-lede{font-size:19px}
-  .ap-body p.ap-lede::first-letter{font-size:60px}
   .ap-pull{font-size:22px;margin:42px 0}
   .ap-hero img{max-height:380px}
 }
@@ -360,11 +359,14 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
 <header class="site-header" id="siteHeader">
   <div class="nav-in">
     <a href="../" class="brand" aria-label="Sellit">
-      <!-- Mark: stylised "S" sitting inside a house silhouette - the brand
-           tying selling (S) to home (roofline) in one mark. Gold accent on
-           the S, hairline navy outline on the house. -->
-      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-        <path d="M16 3 3 13v16h26V13L16 3Z" stroke="#c8a96a" stroke-width="2" stroke-linejoin="round" fill="none"/>
+      <!-- Mark: roofline house silhouette with a stylised S and a Canadian
+           maple-leaf accent in the corner. Reads as "Canadian house-selling
+           publication" in one glance, not as luxury or generic real estate. -->
+      <svg class="brand-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+        <path d="M18 4 4 14v18h28V14L18 4Z" stroke="#c8a96a" stroke-width="2" stroke-linejoin="round" fill="none"/>
+        <!-- Maple-leaf token in the upper-right corner. Small enough to feel
+             like a stamp, not a national flag. -->
+        <path d="M30 7.2l.55 1.4 1.45-.2-.85 1.1 1.25.95-1.45.15.25 1.45-1.2-.85-1.2.85.25-1.45-1.45-.15 1.25-.95-.85-1.1 1.45.2L30 7.2Z" fill="#e74c3c"/>
       </svg>
       Sell<span>it</span>
     </a>
@@ -419,7 +421,6 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
   </div>
 </div>
 </article>
-<div style="text-align:center;padding:40px 24px 56px"><a href="../articles" style="color:currentColor;text-decoration:none;font-family:Georgia,serif;font-size:22px;font-style:italic;border-bottom:1px solid currentColor;padding-bottom:3px">The full archive</a></div>
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -429,7 +430,9 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
             <path d="M16 3 4 13v16h8V20h8v9h8V13L16 3Z" stroke="#c8a96a" stroke-width="2" stroke-linejoin="round"/>
             <circle cx="16" cy="13" r="2.4" fill="#c8a96a"/>
           </svg>
-          Sell<span>it</span>
+          <svg width="28" height="28" viewBox="0 0 36 36" fill="none" aria-hidden="true" style="display:inline-block;vertical-align:-6px;margin-right:4px">
+            <path d="M18 4 4 14v18h28V14L18 4Z" stroke="#c8a96a" stroke-width="2" stroke-linejoin="round" fill="none"/>
+          </svg>Sell<span>it</span>
         </a>
         <p>Luxury and residential real estate intelligence for buyers, sellers and investors who want the full picture.</p>
       </div>
