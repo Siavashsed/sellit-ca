@@ -57,5 +57,42 @@
       "en"
     ],
     "category": "Mortgage & Finance"
+  },
+  {
+    "title": "Negotiating Against a Buyer's Agent: Scripts That Actually Work for FSBO Sellers",
+    "slug": "negotiating-buyers-agent-fsbo-scripts",
+    "meta_description": "Real scripts and tactics for FSBO sellers negotiating against buyer's agents. Insider advice from people who've done it.",
+    "date": "June 02, 2026",
+    "date_iso": "2026-06-02",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/8729998/pexels-photo-8729998.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nar.realtor",
+      "consumerreports.org",
+      "sciencedirect.com"
+    ],
+    "posted_iso": "2026-06-02",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Canada's 30-Year Amortization for New Builds in 2024: What It Actually Changed for Sellers",
+    "slug": "canada-30-year-amortization-new-builds-2024",
+    "meta_description": "Canada's 2024 mortgage rule shift to 30-year amortizations on new builds changed who could buy. Here's what it meant for home sellers on the ground.",
+    "date": "December 06, 2024",
+    "date_iso": "2024-12-06",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/792031/pexels-photo-792031.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "canada.ca",
+      "cmhc-schl.gc.ca",
+      "ratehub.ca"
+    ],
+    "posted_iso": "2026-06-02",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
