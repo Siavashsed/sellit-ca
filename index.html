@@ -100,7 +100,8 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;letter-spacing:-.022em;line-he
 .btn-ghost{border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.03)}
 .btn-ghost:hover{border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.07)}
 .scroll-hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
-.scroll-hint i{width:1px;height:34px;background:linear-gradient(var(--gold),transparent);display:block;animation:dropLine 2s ease-in-out infinite}@keyframes dropLine{0%,100%{transform:scaleY(.4);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+.scroll-hint i{width:1px;height:34px;background:linear-gradient(var(--gold),transparent);display:block;animation:dropLine 2s ease-in-out infinite}
+@keyframes dropLine{0%,100%{transform:scaleY(.4);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
 
 /* TRUST STRIP */
 .trust{border-block:1px solid var(--line);background:var(--bg-soft)}
@@ -266,7 +267,9 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
 .calc-net span:last-child{color:var(--gold-soft);font-size:18px;font-weight:700;letter-spacing:-.01em}
 .calc-hint{margin-top:12px;font-size:12px;color:var(--faint);line-height:1.6;font-style:italic}
 .tools-context{margin-top:36px;padding:22px 28px;background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:14px;font-size:14px;color:var(--muted);line-height:1.7;max-width:920px}
-.tools-context b{color:var(--ink);font-weight:600}@media(max-width:1000px){
+.tools-context b{color:var(--ink);font-weight:600}
+
+@media(max-width:1000px){
   .story-grid,.agent-grid{grid-template-columns:1fr;gap:40px}
   .vgrid,.tgrid{grid-template-columns:repeat(2,1fr)}
   .agrid{grid-template-columns:repeat(2,1fr)}
@@ -275,7 +278,8 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
   .agent-photo{max-width:300px}
   .tools-grid{grid-template-columns:1fr 1fr;gap:14px}
   .tool-calc{grid-row:span 2}
-}@media(max-width:760px){
+}
+@media(max-width:760px){
   body{font-size:15px;line-height:1.6}
   .hero h1{font-size:clamp(28px,7.6vw,40px);line-height:1.06}
   .hero-sub{font-size:14.5px;line-height:1.6;margin:18px 0 28px}
@@ -285,7 +289,8 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
   .block{padding:60px 0}
   .head{margin-bottom:30px}
   .head p{font-size:14px}
-}@media(max-width:680px){
+}
+@media(max-width:680px){
   .wrap{padding:0 18px}
   .nav-in{padding:0 18px;height:62px;gap:14px}
   .nav-links{position:fixed;inset:62px 0 auto 0;flex-direction:column;background:rgba(13,17,23,.98);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:14px 18px;gap:2px;margin:0;transform:translateY(-130%);transition:transform .3s;z-index:119}
@@ -306,13 +311,17 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
   .tool-card{padding:20px}
   .calc-row{padding:8px 12px;font-size:12.5px}
   .calc-row input{flex:0 0 110px;font-size:12.5px}
-}@media(prefers-reduced-motion:reduce){
+}
+@media(prefers-reduced-motion:reduce){
   .reveal{transition:none;opacity:1;transform:none}
   html{scroll-behavior:auto}
   .scroll-hint i{animation:none}
-}</style>
+}
+</style>
 </head>
 <body>
+<!--SHELL:ACCENT:#c8a96a-->
+<!--SHELL:HEADER-->
 <!-- Global ambient background - sits inside SHELL:HEADER so layout_shell
      propagates it to every page (article, about, archive, etc.), not just
      the homepage. -->
@@ -360,6 +369,8 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
     </button>
   </div>
 </header>
+<!--/SHELL:HEADER-->
+
 <section class="hero" id="top">
   <!-- Canadian residential street backdrop, dimmed to texture. Pure CSS
        background so a dead link simply falls back to the dark hero. -->
@@ -402,12 +413,14 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
       <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
         <g stroke="#c8a96a" stroke-width="1.4" fill="none" opacity=".4">
           <path d="M70 360V190l130-92 130 92v170H70Z"/>
+          <path d="M200 98v-26"/>
         </g>
         <g fill="#c8a96a" opacity=".35">
           <circle cx="200" cy="430" r="3"/><circle cx="150" cy="430" r="3"/><circle cx="250" cy="430" r="3"/>
         </g>
         <g stroke="#5b8cff" stroke-width="1" opacity=".3" fill="none">
           <path d="M30 60h120M30 60v60"/>
+          <path d="M370 460h-110M370 460v-70"/>
         </g>
       </svg>
       <div class="story-tag">
@@ -446,7 +459,7 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
       </div>
       <div class="vcard reveal">
         <div class="vicon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 17l5-5 4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 17l5-5 4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 7v5h-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h3>Live market intelligence</h3>
         <p>Rate moves, inventory swings and pricing pressure, updated weekly so you negotiate from the same data the listing agent uses.</p>
@@ -679,6 +692,7 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
 
 
 
+<!--SHELL:FOOTER-->
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -690,6 +704,8 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
           </svg>
           <svg width="28" height="28" viewBox="0 0 36 36" fill="none" aria-hidden="true" style="display:inline-block;vertical-align:-6px;margin-right:4px">
             <path d="M18 4 4 14v18h28V14L18 4Z" stroke="#c8a96a" stroke-width="2" stroke-linejoin="round" fill="none"/>
+            <path d="M13 21.5c0 1.9 1.7 2.9 4.5 2.9 2.5 0 4-1 4-2.4 0-3.3-7.8-1.6-7.8-4.9 0-1.5 1.5-2.4 3.9-2.4 2.3 0 3.9 1 3.9 2.4" stroke="#c8a96a" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M30 7.2l.55 1.4 1.45-.2-.85 1.1 1.25.95-1.45.15.25 1.45-1.2-.85-1.2.85.25-1.45-1.45-.15 1.25-.95-.85-1.1 1.45.2L30 7.2Z" fill="#e74c3c"/>
           </svg>Sell<span>it</span>
         </a>
         <p>Luxury and residential real estate intelligence for buyers, sellers and investors who want the full picture.</p>
@@ -798,14 +814,14 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
       '<defs><linearGradient id="ag'+i+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="'+c[0]+'"/><stop offset="1" stop-color="'+c[1]+'"/></linearGradient></defs>'+
       '<rect width="400" height="200" fill="url(#ag'+i+')"/>'+
       '<g stroke="#c8a96a" stroke-width="1.5" fill="none" opacity=".55">'+
-      '<path d="M120 160V96l80-52 80 52v64H120Z"/></g>'+
-      '<g stroke="#5b8cff" stroke-width="1" opacity=".3" fill="none"><path d="M20 30h70M20 30v34"/></g>'+
+      '<path d="M120 160V96l80-52 80 52v64H120Z"/><path d="M120 160h160M155 160v-40h40v40M215 120h40v40h-40z"/></g>'+
+      '<g stroke="#5b8cff" stroke-width="1" opacity=".3" fill="none"><path d="M20 30h70M20 30v34"/><path d="M380 170h-60M380 170v-34"/></g>'+
       '</svg>';
   }
   function esc(s){var d=document.createElement('div');d.textContent=s==null?'':String(s);return d.innerHTML;}
   function emptyState(){
     grid.innerHTML='<div class="empty">'+
-      '<svg width="46" height="46" viewBox="0 0 24 24" fill="none"><path d="M3 11l9-7 9 7M5 9.5V20h14V9.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>'+
+      '<svg width="46" height="46" viewBox="0 0 24 24" fill="none"><path d="M3 11l9-7 9 7M5 9.5V20h14V9.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 20v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>'+
       '<h3>New listings and guides coming soon</h3>'+
       '<p>Fresh market reports and buying guides are being prepared. Join the Weekly Property Brief to be first to read them.</p>'+
       '</div>';
@@ -966,5 +982,6 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
   }
 })();
 </script>
+<!--/SHELL:FOOTER-->
 </body>
 </html>
