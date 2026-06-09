@@ -96,5 +96,24 @@
       "en"
     ],
     "category": "New Construction"
+  },
+  {
+    "title": "Canada Dropped Its 30-Year Mortgage Rule and Sellers Felt It Immediately",
+    "slug": "canada-30-year-mortgage-rule-2024-sellers",
+    "meta_description": "Canada's 2024 mortgage rule changes reopened the buyer pool. Here's what it actually meant for sellers on the ground.",
+    "date": "December 25, 2024",
+    "date_iso": "2024-12-25",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/34298342/pexels-photo-34298342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cmhc-schl.gc.ca",
+      "ratehub.ca",
+      "bankofcanada.ca"
+    ],
+    "posted_iso": "2026-06-09",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
