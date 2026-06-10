@@ -115,5 +115,25 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Virtual Tours Took Over Canadian Home Sales in 2020 and Nobody Was Ready",
+    "slug": "virtual-tours-canada-real-estate-2020",
+    "meta_description": "In 2020, virtual tour tech went from optional to essential overnight. Here's what actually changed for sellers, agents, and buyers across Canada.",
+    "date": "August 09, 2020",
+    "date_iso": "2020-08-09",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/35505449/pexels-photo-35505449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "matterport.com",
+      "iguide.ca",
+      "nar.realtor",
+      "crea.ca"
+    ],
+    "posted_iso": "2026-06-10",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
