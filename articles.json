@@ -135,5 +135,42 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Realtor Commissions in 2026: The Numbers Nobody Wants You to Question",
+    "slug": "realtor-commissions-2026-negotiable",
+    "meta_description": "What is actually negotiable in realtor commissions in 2026, from someone who sold three houses and cut the fee twice. Real scripts, real numbers.",
+    "date": "July 15, 2026",
+    "date_iso": "2026-07-15",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/8112184/pexels-photo-8112184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "competition-bureau.canada.ca",
+      "reuters.com"
+    ],
+    "posted_iso": "2026-07-15",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The $418 Million Commission Shakeup That Spooked Canadian Sellers in 2024",
+    "slug": "nar-commission-settlement-canada-2024",
+    "meta_description": "The 2024 NAR commission settlement changed how agents get paid. Here's what it meant for Canadian home sellers and FSBO deals right now.",
+    "date": "September 11, 2024",
+    "date_iso": "2024-09-11",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/7937215/pexels-photo-7937215.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "reuters.com",
+      "nar.realtor",
+      "crea.ca",
+      "competition-bureau.canada.ca"
+    ],
+    "posted_iso": "2026-07-15",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
