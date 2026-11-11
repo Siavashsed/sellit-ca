@@ -103,8 +103,6 @@ h1,h2,h3{font-family:var(--serif);font-weight:700;letter-spacing:-.022em;line-he
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(200,169,106,.3)}
 .btn-ghost{border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.03)}
 .btn-ghost:hover{border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.07)}
-.scroll-hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
-.scroll-hint i{width:1px;height:34px;background:linear-gradient(var(--gold),transparent);display:block;animation:dropLine 2s ease-in-out infinite}@keyframes dropLine{0%,100%{transform:scaleY(.4);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
 
 /* TRUST STRIP */
 .trust{border-block:1px solid var(--line);background:var(--bg-soft)}
@@ -303,7 +301,6 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
   .foot-grid{grid-template-columns:1fr 1fr;gap:28px}
   .btn{flex:1;justify-content:center}
   .hero-btns{width:100%}
-  .scroll-hint{display:none}
   /* Tools: single column on phones; calc collapses too */
   .tools-grid{grid-template-columns:1fr;gap:14px}
   .tool-calc{grid-row:auto}
@@ -313,7 +310,6 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
 }@media(prefers-reduced-motion:reduce){
   .reveal{transition:none;opacity:1;transform:none}
   html{scroll-behavior:auto}
-  .scroll-hint i{animation:none}
 }
 /* page */
 .jr{max-width:1180px;margin:0 auto;padding:48px 28px 120px;color:#f4f6fa}
@@ -385,6 +381,29 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
   .jr-card-h{font-size:18px}
   .jr-page{gap:18px}
 }</style>
+<!-- Meta Pixel (Kavalsia network) -->
+<script>
+(function(){
+if(window.__KAVALSIA_META_LOADED)return;window.__KAVALSIA_META_LOADED=true;
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', "3117791381934109");
+var FIRE_PV=true,SITE_ID="sellit-ca",SITE_NAME="Sellit",VIEW_EVT="Viewed Sellit",SIGNUP_EVT="Sellit NewsletterSignup",MIRROR_CAPI=false;
+var segs=location.pathname.split('/').filter(Boolean);var SLUG=segs.length?segs[segs.length-1].replace(/\.html$/,''):'home';if(SLUG==='index')SLUG='home';
+var BASE={site_id:SITE_ID,site_name:SITE_NAME,content_name:SLUG,page_path:location.pathname};
+function P(x){var o={};for(var k in BASE)o[k]=BASE[k];for(var j in x)o[j]=x[j];return o;}
+if(FIRE_PV){try{fbq('track','PageView');}catch(e){}}
+try{fbq('trackCustom',VIEW_EVT,P({page_title:document.title,referrer:document.referrer||''}));}catch(e){}
+function mirrorCAPI(evtName,payload){if(!MIRROR_CAPI)return;try{var hub=(window.KAVALSIA_HUB_URL||'').replace(/\/$/,'');if(!hub)return;fetch(hub+'/api/meta-capi',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({site_id:SITE_ID,event_name:evtName,payload:payload})}).catch(function(){});}catch(e){}}
+mirrorCAPI(VIEW_EVT,P({}));
+var MARKS=[30,60,120],fired={},acc=0,last=document.hidden?0:Date.now();
+function tick(){var now=Date.now();if(last){acc+=(now-last)/1000;}last=document.hidden?0:now;for(var i=0;i<MARKS.length;i++){var m=MARKS[i];if(!fired[m]&&acc>=m){fired[m]=1;var ev='TimeSpent'+m+'s';try{fbq('trackCustom',ev,P({seconds:m}));}catch(e){}mirrorCAPI(ev,P({seconds:m}));}}if(fired[120])clearInterval(iv);}
+var iv=setInterval(tick,1000);document.addEventListener('visibilitychange',tick);
+function sha256Hex(str){if(!window.crypto||!crypto.subtle)return Promise.resolve('');var buf=new TextEncoder().encode(String(str||'').trim().toLowerCase());return crypto.subtle.digest('SHA-256',buf).then(function(h){return Array.prototype.map.call(new Uint8Array(h),function(b){return ('00'+b.toString(16)).slice(-2);}).join('');});}
+document.addEventListener('submit',function(ev){try{var f=ev.target;if(!f||!f.tagName||f.tagName.toLowerCase()!=='form')return;var emailEl=f.querySelector('input[type=email], input[name*=email i]');if(!emailEl||!emailEl.value)return;var email=emailEl.value;sha256Hex(email).then(function(h){try{fbq('trackCustom',SIGNUP_EVT,P({email_hashed:h}));}catch(e){}mirrorCAPI(SIGNUP_EVT,P({email_hashed:h}));});}catch(e){}},true);
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=3117791381934109&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
 </head>
 <body data-page-depth="0">
 <!-- Global ambient background - sits inside SHELL:HEADER so layout_shell
@@ -588,6 +607,8 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
           </svg>
           <svg width="28" height="28" viewBox="0 0 36 36" fill="none" aria-hidden="true" style="display:inline-block;vertical-align:-6px;margin-right:4px">
             <path d="M18 4 4 14v18h28V14L18 4Z" stroke="#c8a96a" stroke-width="2" stroke-linejoin="round" fill="none"/>
+            <path d="M13 21.5c0 1.9 1.7 2.9 4.5 2.9 2.5 0 4-1 4-2.4 0-3.3-7.8-1.6-7.8-4.9 0-1.5 1.5-2.4 3.9-2.4 2.3 0 3.9 1 3.9 2.4" stroke="#c8a96a" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M30 7.2l.55 1.4 1.45-.2-.85 1.1 1.25.95-1.45.15.25 1.45-1.2-.85-1.2.85.25-1.45-1.45-.15 1.25-.95-.85-1.1 1.45.2L30 7.2Z" fill="#e74c3c"/>
           </svg>Sell<span>it</span>
         </a>
         <p>Luxury and residential real estate intelligence for buyers, sellers and investors who want the full picture.</p>
@@ -696,14 +717,14 @@ footer{background:#080b11;border-top:1px solid var(--line);padding:72px 0 32px}
       '<defs><linearGradient id="ag'+i+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="'+c[0]+'"/><stop offset="1" stop-color="'+c[1]+'"/></linearGradient></defs>'+
       '<rect width="400" height="200" fill="url(#ag'+i+')"/>'+
       '<g stroke="#c8a96a" stroke-width="1.5" fill="none" opacity=".55">'+
-      '<path d="M120 160V96l80-52 80 52v64H120Z"/></g>'+
-      '<g stroke="#5b8cff" stroke-width="1" opacity=".3" fill="none"><path d="M20 30h70M20 30v34"/></g>'+
+      '<path d="M120 160V96l80-52 80 52v64H120Z"/><path d="M120 160h160M155 160v-40h40v40M215 120h40v40h-40z"/></g>'+
+      '<g stroke="#5b8cff" stroke-width="1" opacity=".3" fill="none"><path d="M20 30h70M20 30v34"/><path d="M380 170h-60M380 170v-34"/></g>'+
       '</svg>';
   }
   function esc(s){var d=document.createElement('div');d.textContent=s==null?'':String(s);return d.innerHTML;}
   function emptyState(){
     grid.innerHTML='<div class="empty">'+
-      '<svg width="46" height="46" viewBox="0 0 24 24" fill="none"><path d="M3 11l9-7 9 7M5 9.5V20h14V9.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>'+
+      '<svg width="46" height="46" viewBox="0 0 24 24" fill="none"><path d="M3 11l9-7 9 7M5 9.5V20h14V9.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 20v-6h6v6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>'+
       '<h3>New listings and guides coming soon</h3>'+
       '<p>Fresh market reports and buying guides are being prepared. Join the Weekly Property Brief to be first to read them.</p>'+
       '</div>';
