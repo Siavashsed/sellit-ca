@@ -1,137 +1,16 @@
 [
   {
-    "title": "The 2019 First-Time Home Buyer Incentive: What It Actually Did (and Didn't Do) for Canadian Buyers",
-    "slug": "2019-first-time-home-buyer-incentive-canada",
-    "meta_description": "Canada's 2019 First-Time Home Buyer Incentive launched with big promises. Here's what it meant for buyers at the time - and why the reaction was so mixed.",
-    "date": "May 20, 2019",
-    "date_iso": "2019-05-20",
-    "author": "Sellit.ca",
-    "image": "https://images.pexels.com/photos/36729688/pexels-photo-36729688.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "outbound_links": [
-      "cmhc-schl.gc.ca",
-      "crea.ca",
-      "bankofcanada.ca"
-    ],
-    "historical": true,
-    "available_languages": [
-      "en"
-    ],
-    "category": "Mortgage & Finance"
-  },
-  {
-    "title": "COVID-19 Killed the Open House in 2020 - and Canadian Real Estate Didn't Collapse",
-    "slug": "covid-real-estate-canada-2020",
-    "meta_description": "In 2020, COVID-19 forced Canadian real estate to go virtual overnight. Here's what actually happened, what worked, and what it means for buyers and sellers.",
-    "date": "August 02, 2020",
-    "date_iso": "2020-08-02",
-    "author": "Sellit.ca",
-    "image": "https://images.pexels.com/photos/5178064/pexels-photo-5178064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "outbound_links": [
-      "cmhc-schl.gc.ca",
-      "crea.ca",
-      "fsrao.ca",
-      "nar.realtor"
-    ],
-    "historical": true,
-    "available_languages": [
-      "en"
-    ],
-    "category": "Selling Strategy"
-  },
-  {
-    "title": "Canada's Mortgage Rule Overhaul in 2024: What It Actually Changed for Buyers",
-    "slug": "canada-mortgage-rules-2024-changes",
-    "meta_description": "Canada rewrote its mortgage rules in late 2024. Here's what the changes meant for real buyers and sellers, from a practitioner who watched it unfold.",
-    "date": "May 21, 2024",
-    "date_iso": "2024-05-21",
-    "author": "Sellit.ca",
-    "image": "https://images.pexels.com/photos/31974125/pexels-photo-31974125.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "outbound_links": [
-      "cmhc-schl.gc.ca",
-      "ratehub.ca",
-      "crea.ca",
-      "bankofcanada.ca"
-    ],
-    "historical": true,
-    "available_languages": [
-      "en"
-    ],
-    "category": "Mortgage & Finance"
-  },
-  {
-    "title": "Negotiating Against a Buyer's Agent: Scripts That Actually Work for FSBO Sellers",
-    "slug": "negotiating-buyers-agent-fsbo-scripts",
-    "meta_description": "Real scripts and tactics for FSBO sellers negotiating against buyer's agents. Insider advice from people who've done it.",
-    "date": "June 02, 2026",
-    "date_iso": "2026-06-02",
-    "author": "Sellit.ca",
-    "image": "https://images.pexels.com/photos/8729998/pexels-photo-8729998.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "outbound_links": [
-      "nar.realtor",
-      "consumerreports.org",
-      "sciencedirect.com"
-    ],
-    "posted_iso": "2026-06-02",
-    "available_languages": [
-      "en"
-    ],
-    "category": "Selling Strategy"
-  },
-  {
-    "title": "Canada's 30-Year Amortization for New Builds in 2024: What It Actually Changed for Sellers",
-    "slug": "canada-30-year-amortization-new-builds-2024",
-    "meta_description": "Canada's 2024 mortgage rule shift to 30-year amortizations on new builds changed who could buy. Here's what it meant for home sellers on the ground.",
-    "date": "December 06, 2024",
-    "date_iso": "2024-12-06",
-    "author": "Sellit.ca",
-    "image": "https://images.pexels.com/photos/792031/pexels-photo-792031.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "outbound_links": [
-      "canada.ca",
-      "cmhc-schl.gc.ca",
-      "ratehub.ca"
-    ],
-    "posted_iso": "2026-06-02",
-    "historical": true,
-    "available_languages": [
-      "en"
-    ],
-    "category": "New Construction"
-  },
-  {
-    "title": "Canada Dropped Its 30-Year Mortgage Rule and Sellers Felt It Immediately",
-    "slug": "canada-30-year-mortgage-rule-2024-sellers",
-    "meta_description": "Canada's 2024 mortgage rule changes reopened the buyer pool. Here's what it actually meant for sellers on the ground.",
-    "date": "December 25, 2024",
-    "date_iso": "2024-12-25",
-    "author": "Sellit.ca",
-    "image": "https://images.pexels.com/photos/34298342/pexels-photo-34298342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "outbound_links": [
-      "cmhc-schl.gc.ca",
-      "ratehub.ca",
-      "bankofcanada.ca"
-    ],
-    "posted_iso": "2026-06-09",
-    "historical": true,
-    "available_languages": [
-      "en"
-    ]
-  },
-  {
-    "title": "Virtual Tours Took Over Canadian Home Sales in 2020 and Nobody Was Ready",
-    "slug": "virtual-tours-canada-real-estate-2020",
-    "meta_description": "In 2020, virtual tour tech went from optional to essential overnight. Here's what actually changed for sellers, agents, and buyers across Canada.",
-    "date": "August 09, 2020",
-    "date_iso": "2020-08-09",
-    "author": "Sellit.ca",
-    "image": "https://images.pexels.com/photos/35505449/pexels-photo-35505449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "outbound_links": [
-      "matterport.com",
-      "iguide.ca",
-      "nar.realtor",
-      "crea.ca"
-    ],
-    "posted_iso": "2026-06-10",
-    "historical": true,
+    "title": "How to Get More Listings: Eight Steps Realtors Can Take From an Acquisition Firm's Tracking Playbook",
+    "slug": "realtors-listings-tracking-offline-conversion-matching",
+    "meta_description": "Eight practical steps for realtors, drawn from how Kavalsia tracks ads to real sales with Helm and offline-conversion matching. Judge ads by signed listings.",
+    "date": "November 10, 2026",
+    "date_iso": "2026-11-10",
+    "author": "Theo Brannigan",
+    "image": "https://images.pexels.com/photos/7937207/pexels-photo-7937207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "image_alt": "A real estate agent placing a For Sale sign in front of a house.",
+    "photographer": "Pavel Danilyuk",
+    "category": "Home Selling & Real Estate Intel",
+    "posted_iso": "2026-11-10T22:52:30",
     "available_languages": [
       "en"
     ]
@@ -154,6 +33,64 @@
     ]
   },
   {
+    "title": "Negotiating Against a Buyer's Agent: Scripts That Actually Work for FSBO Sellers",
+    "slug": "negotiating-buyers-agent-fsbo-scripts",
+    "meta_description": "Real scripts and tactics for FSBO sellers negotiating against buyer's agents. Insider advice from people who've done it.",
+    "date": "June 02, 2026",
+    "date_iso": "2026-06-02",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/8729998/pexels-photo-8729998.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nar.realtor",
+      "consumerreports.org",
+      "sciencedirect.com"
+    ],
+    "posted_iso": "2026-06-02",
+    "available_languages": [
+      "en"
+    ],
+    "category": "Selling Strategy"
+  },
+  {
+    "title": "Canada Dropped Its 30-Year Mortgage Rule and Sellers Felt It Immediately",
+    "slug": "canada-30-year-mortgage-rule-2024-sellers",
+    "meta_description": "Canada's 2024 mortgage rule changes reopened the buyer pool. Here's what it actually meant for sellers on the ground.",
+    "date": "December 25, 2024",
+    "date_iso": "2024-12-25",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/34298342/pexels-photo-34298342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cmhc-schl.gc.ca",
+      "ratehub.ca",
+      "bankofcanada.ca"
+    ],
+    "posted_iso": "2026-06-09",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Canada's 30-Year Amortization for New Builds in 2024: What It Actually Changed for Sellers",
+    "slug": "canada-30-year-amortization-new-builds-2024",
+    "meta_description": "Canada's 2024 mortgage rule shift to 30-year amortizations on new builds changed who could buy. Here's what it meant for home sellers on the ground.",
+    "date": "December 06, 2024",
+    "date_iso": "2024-12-06",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/792031/pexels-photo-792031.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "canada.ca",
+      "cmhc-schl.gc.ca",
+      "ratehub.ca"
+    ],
+    "posted_iso": "2026-06-02",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ],
+    "category": "New Construction"
+  },
+  {
     "title": "The $418 Million Commission Shakeup That Spooked Canadian Sellers in 2024",
     "slug": "nar-commission-settlement-canada-2024",
     "meta_description": "The 2024 NAR commission settlement changed how agents get paid. Here's what it meant for Canadian home sellers and FSBO deals right now.",
@@ -172,5 +109,84 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Canada's Mortgage Rule Overhaul in 2024: What It Actually Changed for Buyers",
+    "slug": "canada-mortgage-rules-2024-changes",
+    "meta_description": "Canada rewrote its mortgage rules in late 2024. Here's what the changes meant for real buyers and sellers, from a practitioner who watched it unfold.",
+    "date": "May 21, 2024",
+    "date_iso": "2024-05-21",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/31974125/pexels-photo-31974125.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cmhc-schl.gc.ca",
+      "ratehub.ca",
+      "crea.ca",
+      "bankofcanada.ca"
+    ],
+    "historical": true,
+    "available_languages": [
+      "en"
+    ],
+    "category": "Mortgage & Finance"
+  },
+  {
+    "title": "Virtual Tours Took Over Canadian Home Sales in 2020 and Nobody Was Ready",
+    "slug": "virtual-tours-canada-real-estate-2020",
+    "meta_description": "In 2020, virtual tour tech went from optional to essential overnight. Here's what actually changed for sellers, agents, and buyers across Canada.",
+    "date": "August 09, 2020",
+    "date_iso": "2020-08-09",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/35505449/pexels-photo-35505449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "matterport.com",
+      "iguide.ca",
+      "nar.realtor",
+      "crea.ca"
+    ],
+    "posted_iso": "2026-06-10",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "COVID-19 Killed the Open House in 2020 - and Canadian Real Estate Didn't Collapse",
+    "slug": "covid-real-estate-canada-2020",
+    "meta_description": "In 2020, COVID-19 forced Canadian real estate to go virtual overnight. Here's what actually happened, what worked, and what it means for buyers and sellers.",
+    "date": "August 02, 2020",
+    "date_iso": "2020-08-02",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/5178064/pexels-photo-5178064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cmhc-schl.gc.ca",
+      "crea.ca",
+      "fsrao.ca",
+      "nar.realtor"
+    ],
+    "historical": true,
+    "available_languages": [
+      "en"
+    ],
+    "category": "Selling Strategy"
+  },
+  {
+    "title": "The 2019 First-Time Home Buyer Incentive: What It Actually Did (and Didn't Do) for Canadian Buyers",
+    "slug": "2019-first-time-home-buyer-incentive-canada",
+    "meta_description": "Canada's 2019 First-Time Home Buyer Incentive launched with big promises. Here's what it meant for buyers at the time - and why the reaction was so mixed.",
+    "date": "May 20, 2019",
+    "date_iso": "2019-05-20",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/36729688/pexels-photo-36729688.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cmhc-schl.gc.ca",
+      "crea.ca",
+      "bankofcanada.ca"
+    ],
+    "historical": true,
+    "available_languages": [
+      "en"
+    ],
+    "category": "Mortgage & Finance"
   }
 ]
