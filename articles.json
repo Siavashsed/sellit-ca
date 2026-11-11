@@ -1,21 +1,5 @@
 [
   {
-    "title": "How to Get More Listings: Eight Steps Realtors Can Take From an Acquisition Firm's Tracking Playbook",
-    "slug": "realtors-listings-tracking-offline-conversion-matching",
-    "meta_description": "Eight practical steps for realtors, drawn from how Kavalsia tracks ads to real sales with Helm and offline-conversion matching. Judge ads by signed listings.",
-    "date": "November 10, 2026",
-    "date_iso": "2026-11-10",
-    "author": "Theo Brannigan",
-    "image": "https://images.pexels.com/photos/7937207/pexels-photo-7937207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "image_alt": "A real estate agent placing a For Sale sign in front of a house.",
-    "photographer": "Pavel Danilyuk",
-    "category": "Home Selling & Real Estate Intel",
-    "posted_iso": "2026-11-10T22:52:30",
-    "available_languages": [
-      "en"
-    ]
-  },
-  {
     "title": "Realtor Commissions in 2026: The Numbers Nobody Wants You to Question",
     "slug": "realtor-commissions-2026-negotiable",
     "meta_description": "What is actually negotiable in realtor commissions in 2026, from someone who sold three houses and cut the fee twice. Real scripts, real numbers.",
@@ -129,6 +113,22 @@
       "en"
     ],
     "category": "Mortgage & Finance"
+  },
+  {
+    "title": "How to Get More Listings: Eight Steps Realtors Can Take From Kavalsia's Tracking Playbook",
+    "slug": "realtors-listings-tracking-offline-conversion-matching",
+    "meta_description": "Eight practical steps for realtors, drawn from how Kavalsia tracks ads to real sales with server events and offline-conversion matching.",
+    "date": "November 15, 2022",
+    "date_iso": "2022-11-15",
+    "author": "Theo Brannigan",
+    "image": "https://images.pexels.com/photos/7937330/pexels-photo-7937330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "image_alt": "A real estate agent showing a house to a couple, pointing out its features.",
+    "photographer": "Pavel Danilyuk",
+    "category": "Home Selling & Real Estate Intel",
+    "posted_iso": "2026-11-10T23:11:12",
+    "available_languages": [
+      "en"
+    ]
   },
   {
     "title": "Virtual Tours Took Over Canadian Home Sales in 2020 and Nobody Was Ready",
