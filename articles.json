@@ -192,5 +192,45 @@
       "en"
     ],
     "category": "Mortgage & Finance"
+  },
+  {
+    "title": "List This Spring or Wait? The Inventory Count Decides",
+    "slug": "market-timing-list-this-season-or-next",
+    "meta_description": "Market timing for home sellers: why active listings in your price band matter more than the calendar when deciding to list this season or next.",
+    "date": "November 15, 2026",
+    "date_iso": "2026-11-15",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/40440128/pexels-photo-40440128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "crea.ca",
+      "nar.realtor",
+      "bankofcanada.ca",
+      "cmhc-schl.gc.ca"
+    ],
+    "posted_iso": "2026-11-15",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "CMHC Just Raised the Credit Bar to 680, and Your Buyer Pool Shrank",
+    "slug": "cmhc-mortgage-insurance-rules-2020",
+    "meta_description": "CMHC's July 2020 mortgage insurance changes cut some buyers out. What the 680 credit floor and tighter debt ratios mean if you're selling a home now.",
+    "date": "January 13, 2020",
+    "date_iso": "2020-01-13",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/7875831/pexels-photo-7875831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "cmhc-schl.gc.ca",
+      "bankofcanada.ca",
+      "reuters.com",
+      "crea.ca",
+      "cba.ca"
+    ],
+    "posted_iso": "2026-11-15",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
