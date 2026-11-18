@@ -268,5 +268,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Every Buyer Agent Runs the Same Five Plays on Sellers",
+    "slug": "buyer-agent-playbook-five-plays",
+    "meta_description": "The buyer-agent playbook decoded by working agents and FSBO sellers: lowball anchors, commission asks, inspection re-trades and how to answer each one.",
+    "date": "November 18, 2026",
+    "date_iso": "2026-11-18",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/7578875/pexels-photo-7578875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "reco.on.ca",
+      "nar.realtor"
+    ],
+    "posted_iso": "2026-11-18",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
