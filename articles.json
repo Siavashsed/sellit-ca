@@ -340,5 +340,42 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "A Pre-Approval Letter Is a Sales Brochure, So Read It Like One",
+    "slug": "read-buyer-pre-approval-letter-weak-offer",
+    "meta_description": "How to read a buyer's pre-approval letter, spot the soft spots in a weak offer, and ask the three questions that expose it before you accept.",
+    "date": "November 22, 2026",
+    "date_iso": "2026-11-22",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/7843979/pexels-photo-7843979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "consumerfinance.gov",
+      "redfin.com",
+      "hud.gov",
+      "selling-guide.fanniemae.com"
+    ],
+    "posted_iso": "2026-11-22",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The Spring 2020 Virtual Tour Scramble Rewrote How Canadians Sell Homes",
+    "slug": "virtual-tours-2020-home-selling-shift",
+    "meta_description": "In spring 2020 open houses vanished and virtual tours took over. Here's what that scramble meant for Canadian home sellers and what still holds up.",
+    "date": "March 13, 2020",
+    "date_iso": "2020-03-13",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/36764649/pexels-photo-36764649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "crea.ca",
+      "bankofcanada.ca"
+    ],
+    "posted_iso": "2026-11-22",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
