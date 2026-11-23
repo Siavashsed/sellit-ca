@@ -377,5 +377,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Selling a House With Tenants Means Selling Their Lease Too",
+    "slug": "selling-home-with-tenants-canada",
+    "meta_description": "Selling a home with tenants in Canada: what notice you owe, when a buyer can evict, what cash-for-keys costs, and the mistakes that kill deals.",
+    "date": "November 23, 2026",
+    "date_iso": "2026-11-23",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/7579193/pexels-photo-7579193.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "ontario.ca",
+      "tribunalsontario.ca",
+      "cmhc-schl.gc.ca"
+    ],
+    "posted_iso": "2026-11-23",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
