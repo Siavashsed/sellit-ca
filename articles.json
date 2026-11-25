@@ -413,5 +413,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Locked Rate Matters Less Than Your Buyer's Financing Type",
+    "slug": "selling-home-mortgage-rate-lock-buyer-financing",
+    "meta_description": "Selling with a mortgage rate lock? Your buyer's financing type, insured, conventional or private, shapes your price, timeline and risk more than your rate.",
+    "date": "November 25, 2026",
+    "date_iso": "2026-11-25",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/8293750/pexels-photo-8293750.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "bankofcanada.ca",
+      "cmhc-schl.gc.ca",
+      "canada.ca"
+    ],
+    "posted_iso": "2026-11-25",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
