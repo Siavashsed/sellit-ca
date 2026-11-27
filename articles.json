@@ -448,5 +448,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Appraisal Came In Low. Here's the Playbook That Actually Works",
+    "slug": "appraisal-gap-below-accepted-price",
+    "meta_description": "Appraisal gaps hit when the lender's value lands under your accepted price. Here are the moves that save the deal, and the ones that waste your week.",
+    "date": "November 27, 2026",
+    "date_iso": "2026-11-27",
+    "author": "Sellit.ca",
+    "image": "https://images.pexels.com/photos/7190858/pexels-photo-7190858.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "fanniemae.com",
+      "cmhc-schl.gc.ca"
+    ],
+    "posted_iso": "2026-11-27",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
